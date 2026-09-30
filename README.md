@@ -83,11 +83,3 @@ eas build -p android --profile preview
 
 El perfil `preview` de `eas.json` usa `"buildType": "apk"`, así que genera un `.apk` instalable directamente en lugar de un `.aab`. Cuando termina el build, EAS muestra el link de descarga.
 
-## Regenerar los íconos
-
-Si cambias `assets/masterball.png`, vuelve a generar todos los íconos con:
-
-```bash
-pip install pillow
-python scripts/generate_icons.py
-```
