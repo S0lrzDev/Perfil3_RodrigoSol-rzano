@@ -1,17 +1,18 @@
 {
   "expo": {
-    "name": "pokeapp",
+    "name": "PokeApp",
     "slug": "pokeapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.s0lrzdev.pokeapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#1B163A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,6 +20,23 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#1B163A"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "14bc804f-03a9-461b-93ec-bc6954b9a6b4"
+      }
+    },
+    "owner": "s0lrzdev"
   }
 }
